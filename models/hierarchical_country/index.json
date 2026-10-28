@@ -1,0 +1,38 @@
+{
+  "Egyptian": {
+    "type": "constant",
+    "country": "Egypt"
+  },
+  "Gulf": {
+    "type": "model",
+    "countries": [
+      "Oman",
+      "Qatar",
+      "Saudi Arabia",
+      "Sudan",
+      "Yemen"
+    ]
+  },
+  "Iraqi": {
+    "type": "constant",
+    "country": "Iraq"
+  },
+  "Levantine": {
+    "type": "model",
+    "countries": [
+      "Jordan",
+      "Lebanon",
+      "Palestine",
+      "Syria"
+    ]
+  },
+  "Maghrebi": {
+    "type": "model",
+    "countries": [
+      "Algeria",
+      "Libya",
+      "Morocco",
+      "Tunisia"
+    ]
+  }
+}

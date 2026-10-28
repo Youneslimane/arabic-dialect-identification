@@ -1,0 +1,73 @@
+{
+  "Egyptian": {
+    "type": "constant",
+    "country": "Egypt",
+    "train_size": 14326,
+    "test_size": 3069
+  },
+  "Gulf": {
+    "type": "model",
+    "countries": [
+      "Oman",
+      "Qatar",
+      "Saudi Arabia",
+      "Sudan",
+      "Yemen"
+    ],
+    "train_size": 15196,
+    "test_size": 3256,
+    "accuracy": 0.7432432432432432,
+    "f1_macro": 0.6366698707172926,
+    "test_distribution": {
+      "Oman": 299,
+      "Qatar": 1760,
+      "Saudi Arabia": 598,
+      "Sudan": 299,
+      "Yemen": 300
+    }
+  },
+  "Iraqi": {
+    "type": "constant",
+    "country": "Iraq",
+    "train_size": 4340,
+    "test_size": 929
+  },
+  "Levantine": {
+    "type": "model",
+    "countries": [
+      "Jordan",
+      "Lebanon",
+      "Palestine",
+      "Syria"
+    ],
+    "train_size": 70040,
+    "test_size": 15007,
+    "accuracy": 0.8114213367095355,
+    "f1_macro": 0.7642247369608942,
+    "test_distribution": {
+      "Jordan": 1649,
+      "Lebanon": 3389,
+      "Palestine": 2802,
+      "Syria": 7167
+    }
+  },
+  "Maghrebi": {
+    "type": "model",
+    "countries": [
+      "Algeria",
+      "Libya",
+      "Morocco",
+      "Tunisia"
+    ],
+    "train_size": 43201,
+    "test_size": 9258,
+    "accuracy": 0.9107798660617844,
+    "f1_macro": 0.8843313765319867,
+    "test_distribution": {
+      "Algeria": 1941,
+      "Libya": 598,
+      "Morocco": 2998,
+      "Tunisia": 3721
+    }
+  }
+}

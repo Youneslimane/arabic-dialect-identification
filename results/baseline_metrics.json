@@ -1,0 +1,788 @@
+{
+  "split_sizes": {
+    "region": {
+      "train": 166796,
+      "validation": 35739,
+      "test": 35739
+    },
+    "country": {
+      "train": 147103,
+      "validation": 31519,
+      "test": 31519
+    }
+  },
+  "tasks": {
+    "region": {
+      "split_sizes": {
+        "train": 166796,
+        "validation": 35739,
+        "test": 35739
+      },
+      "models": {
+        "logistic_regression": {
+          "validation": {
+            "accuracy": 0.8319762724194857,
+            "precision_macro": 0.7318532337388869,
+            "recall_macro": 0.8195028291773662,
+            "f1_macro": 0.7639625799488071,
+            "precision_weighted": 0.8597079019814874,
+            "recall_weighted": 0.8319762724194857,
+            "f1_weighted": 0.8401712387179987,
+            "classification_report": {
+              "Egyptian": {
+                "precision": 0.7377352668929342,
+                "recall": 0.7790811339198436,
+                "f1-score": 0.7578446909667195,
+                "support": 3069.0
+              },
+              "Gulf": {
+                "precision": 0.5930171964564878,
+                "recall": 0.8029162746942615,
+                "f1-score": 0.6821860325706863,
+                "support": 4252.0
+              },
+              "Iraqi": {
+                "precision": 0.4670468948035488,
+                "recall": 0.7933261571582346,
+                "f1-score": 0.5879537295572397,
+                "support": 929.0
+              },
+              "Levantine": {
+                "precision": 0.9591294354259445,
+                "recall": 0.8335205992509364,
+                "f1-score": 0.8919243871484871,
+                "support": 16020.0
+              },
+              "MSA": {
+                "precision": 0.7095773555641721,
+                "recall": 0.8480074142724745,
+                "f1-score": 0.772640911969601,
+                "support": 2158.0
+              },
+              "Maghrebi": {
+                "precision": 0.9246132532902333,
+                "recall": 0.860165395768446,
+                "f1-score": 0.8912257274801091,
+                "support": 9311.0
+              },
+              "accuracy": 0.8319762724194857,
+              "macro avg": {
+                "precision": 0.7318532337388869,
+                "recall": 0.8195028291773662,
+                "f1-score": 0.7639625799488071,
+                "support": 35739.0
+              },
+              "weighted avg": {
+                "precision": 0.8597079019814874,
+                "recall": 0.8319762724194857,
+                "f1-score": 0.8401712387179987,
+                "support": 35739.0
+              }
+            }
+          },
+          "test": {
+            "accuracy": 0.8353899101821539,
+            "precision_macro": 0.7355010756023957,
+            "recall_macro": 0.818301357196709,
+            "f1_macro": 0.7658047469350434,
+            "precision_weighted": 0.8621649711011761,
+            "recall_weighted": 0.8353899101821539,
+            "f1_weighted": 0.8433996442171074,
+            "classification_report": {
+              "Egyptian": {
+                "precision": 0.7414589104339797,
+                "recall": 0.7849462365591398,
+                "f1-score": 0.7625830959164293,
+                "support": 3069.0
+              },
+              "Gulf": {
+                "precision": 0.6022608695652174,
+                "recall": 0.8144402634054563,
+                "f1-score": 0.6924615076984603,
+                "support": 4252.0
+              },
+              "Iraqi": {
+                "precision": 0.44829760403530894,
+                "recall": 0.7653390742734123,
+                "f1-score": 0.5654075546719682,
+                "support": 929.0
+              },
+              "Levantine": {
+                "precision": 0.9590827660336797,
+                "recall": 0.8354556803995006,
+                "f1-score": 0.8930108423686405,
+                "support": 16020.0
+              },
+              "MSA": {
+                "precision": 0.7379310344827587,
+                "recall": 0.8429101019462465,
+                "f1-score": 0.7869348907635735,
+                "support": 2158.0
+              },
+              "Maghrebi": {
+                "precision": 0.9239752690634303,
+                "recall": 0.8667167865964988,
+                "f1-score": 0.8944305901911886,
+                "support": 9311.0
+              },
+              "accuracy": 0.8353899101821539,
+              "macro avg": {
+                "precision": 0.7355010756023957,
+                "recall": 0.818301357196709,
+                "f1-score": 0.7658047469350434,
+                "support": 35739.0
+              },
+              "weighted avg": {
+                "precision": 0.8621649711011761,
+                "recall": 0.8353899101821539,
+                "f1-score": 0.8433996442171074,
+                "support": 35739.0
+              }
+            }
+          },
+          "classes": [
+            "Egyptian",
+            "Gulf",
+            "Iraqi",
+            "Levantine",
+            "MSA",
+            "Maghrebi"
+          ]
+        },
+        "linear_svc": {
+          "validation": {
+            "accuracy": 0.8753742410252106,
+            "precision_macro": 0.8081504255301585,
+            "recall_macro": 0.8258124585162583,
+            "f1_macro": 0.8165446698254829,
+            "precision_weighted": 0.8786612028260617,
+            "recall_weighted": 0.8753742410252106,
+            "f1_weighted": 0.8767229565988461,
+            "classification_report": {
+              "Egyptian": {
+                "precision": 0.779454253611557,
+                "recall": 0.7911371782339525,
+                "f1-score": 0.7852522639068564,
+                "support": 3069.0
+              },
+              "Gulf": {
+                "precision": 0.7110298860460116,
+                "recall": 0.7777516462841016,
+                "f1-score": 0.7428956531506233,
+                "support": 4252.0
+              },
+              "Iraqi": {
+                "precision": 0.6888888888888889,
+                "recall": 0.7341227125941873,
+                "f1-score": 0.7107868681605003,
+                "support": 929.0
+              },
+              "Levantine": {
+                "precision": 0.9344136296675847,
+                "recall": 0.9106741573033708,
+                "f1-score": 0.9223911737742231,
+                "support": 16020.0
+              },
+              "MSA": {
+                "precision": 0.8077617328519856,
+                "recall": 0.8294717330861909,
+                "f1-score": 0.8184727937814358,
+                "support": 2158.0
+              },
+              "Maghrebi": {
+                "precision": 0.9273541621149224,
+                "recall": 0.911717323595747,
+                "f1-score": 0.9194692661792581,
+                "support": 9311.0
+              },
+              "accuracy": 0.8753742410252106,
+              "macro avg": {
+                "precision": 0.8081504255301585,
+                "recall": 0.8258124585162583,
+                "f1-score": 0.8165446698254829,
+                "support": 35739.0
+              },
+              "weighted avg": {
+                "precision": 0.8786612028260617,
+                "recall": 0.8753742410252106,
+                "f1-score": 0.8767229565988461,
+                "support": 35739.0
+              }
+            }
+          },
+          "test": {
+            "accuracy": 0.8757379893113965,
+            "precision_macro": 0.8124029601396857,
+            "recall_macro": 0.8269319786646032,
+            "f1_macro": 0.819282794377985,
+            "precision_weighted": 0.8790164393925353,
+            "recall_weighted": 0.8757379893113965,
+            "f1_weighted": 0.877067530066117,
+            "classification_report": {
+              "Egyptian": {
+                "precision": 0.7740506329113924,
+                "recall": 0.7970022808732486,
+                "f1-score": 0.7853588055867715,
+                "support": 3069.0
+              },
+              "Gulf": {
+                "precision": 0.7111063556601754,
+                "recall": 0.7815145813734713,
+                "f1-score": 0.7446498599439776,
+                "support": 4252.0
+              },
+              "Iraqi": {
+                "precision": 0.7015544041450777,
+                "recall": 0.728740581270183,
+                "f1-score": 0.7148891235480465,
+                "support": 929.0
+              },
+              "Levantine": {
+                "precision": 0.9357344632768362,
+                "recall": 0.9098002496878901,
+                "f1-score": 0.9225851373591594,
+                "support": 16020.0
+              },
+              "MSA": {
+                "precision": 0.8302583025830258,
+                "recall": 0.8341056533827618,
+                "f1-score": 0.8321775312066574,
+                "support": 2158.0
+              },
+              "Maghrebi": {
+                "precision": 0.921713602261607,
+                "recall": 0.9104285254000645,
+                "f1-score": 0.916036308623298,
+                "support": 9311.0
+              },
+              "accuracy": 0.8757379893113965,
+              "macro avg": {
+                "precision": 0.8124029601396857,
+                "recall": 0.8269319786646032,
+                "f1-score": 0.819282794377985,
+                "support": 35739.0
+              },
+              "weighted avg": {
+                "precision": 0.8790164393925353,
+                "recall": 0.8757379893113965,
+                "f1-score": 0.877067530066117,
+                "support": 35739.0
+              }
+            }
+          },
+          "classes": [
+            "Egyptian",
+            "Gulf",
+            "Iraqi",
+            "Levantine",
+            "MSA",
+            "Maghrebi"
+          ]
+        }
+      }
+    },
+    "country": {
+      "split_sizes": {
+        "train": 147103,
+        "validation": 31519,
+        "test": 31519
+      },
+      "models": {
+        "logistic_regression": {
+          "validation": {
+            "accuracy": 0.7460262064151781,
+            "precision_macro": 0.6263693030090853,
+            "recall_macro": 0.6687127849347606,
+            "f1_macro": 0.6382284184605127,
+            "precision_weighted": 0.7757443988112549,
+            "recall_weighted": 0.7460262064151781,
+            "f1_weighted": 0.757072851865978,
+            "classification_report": {
+              "Algeria": {
+                "precision": 0.7844194022537971,
+                "recall": 0.8248325605358063,
+                "f1-score": 0.8041185334003014,
+                "support": 1941.0
+              },
+              "Egypt": {
+                "precision": 0.8460656990068754,
+                "recall": 0.7217334636689475,
+                "f1-score": 0.7789695797432742,
+                "support": 3069.0
+              },
+              "Iraq": {
+                "precision": 0.6897621509824199,
+                "recall": 0.7179763186221744,
+                "f1-score": 0.7035864978902954,
+                "support": 929.0
+              },
+              "Jordan": {
+                "precision": 0.5386289445048966,
+                "recall": 0.6003638568829593,
+                "f1-score": 0.5678233438485805,
+                "support": 1649.0
+              },
+              "Lebanon": {
+                "precision": 0.7159346846846847,
+                "recall": 0.7503688403658897,
+                "f1-score": 0.7327474427315949,
+                "support": 3389.0
+              },
+              "Libya": {
+                "precision": 0.44021739130434784,
+                "recall": 0.677257525083612,
+                "f1-score": 0.5335968379446641,
+                "support": 598.0
+              },
+              "Morocco": {
+                "precision": 0.9066016504126031,
+                "recall": 0.8062041360907272,
+                "f1-score": 0.8534604519774012,
+                "support": 2998.0
+              },
+              "Oman": {
+                "precision": 0.17704517704517705,
+                "recall": 0.48494983277591974,
+                "f1-score": 0.259391771019678,
+                "support": 299.0
+              },
+              "Palestine": {
+                "precision": 0.6518900343642612,
+                "recall": 0.6770164168451106,
+                "f1-score": 0.6642156862745098,
+                "support": 2802.0
+              },
+              "Qatar": {
+                "precision": 0.678609062170706,
+                "recall": 0.7318181818181818,
+                "f1-score": 0.7042099507927829,
+                "support": 1760.0
+              },
+              "Saudi Arabia": {
+                "precision": 0.29571577847439917,
+                "recall": 0.47324414715719065,
+                "f1-score": 0.3639871382636656,
+                "support": 598.0
+              },
+              "Sudan": {
+                "precision": 0.38858695652173914,
+                "recall": 0.4782608695652174,
+                "f1-score": 0.4287856071964018,
+                "support": 299.0
+              },
+              "Syria": {
+                "precision": 0.9128664495114006,
+                "recall": 0.7820566485279754,
+                "f1-score": 0.8424137671902007,
+                "support": 7167.0
+              },
+              "Tunisia": {
+                "precision": 0.8988128886376484,
+                "recall": 0.8546089760816985,
+                "f1-score": 0.8761537401845985,
+                "support": 3721.0
+              },
+              "Yemen": {
+                "precision": 0.47038327526132406,
+                "recall": 0.45,
+                "f1-score": 0.4599659284497445,
+                "support": 300.0
+              },
+              "accuracy": 0.7460262064151781,
+              "macro avg": {
+                "precision": 0.6263693030090853,
+                "recall": 0.6687127849347606,
+                "f1-score": 0.6382284184605127,
+                "support": 31519.0
+              },
+              "weighted avg": {
+                "precision": 0.7757443988112549,
+                "recall": 0.7460262064151781,
+                "f1-score": 0.757072851865978,
+                "support": 31519.0
+              }
+            }
+          },
+          "test": {
+            "accuracy": 0.7467876518925093,
+            "precision_macro": 0.627949575760972,
+            "recall_macro": 0.6700768236432892,
+            "f1_macro": 0.6397233557916959,
+            "precision_weighted": 0.775048194133982,
+            "recall_weighted": 0.7467876518925093,
+            "f1_weighted": 0.7571622408248997,
+            "classification_report": {
+              "Algeria": {
+                "precision": 0.7855029585798816,
+                "recall": 0.8207109737248841,
+                "f1-score": 0.8027210884353742,
+                "support": 1941.0
+              },
+              "Egypt": {
+                "precision": 0.8361940298507463,
+                "recall": 0.7302052785923754,
+                "f1-score": 0.779613845886241,
+                "support": 3069.0
+              },
+              "Iraq": {
+                "precision": 0.6806981519507187,
+                "recall": 0.7136706135629709,
+                "f1-score": 0.6967945349448239,
+                "support": 929.0
+              },
+              "Jordan": {
+                "precision": 0.5266304347826087,
+                "recall": 0.5876288659793815,
+                "f1-score": 0.5554600171969045,
+                "support": 1649.0
+              },
+              "Lebanon": {
+                "precision": 0.720575783234547,
+                "recall": 0.7533195632930068,
+                "f1-score": 0.7365839584535487,
+                "support": 3389.0
+              },
+              "Libya": {
+                "precision": 0.43743199129488575,
+                "recall": 0.6722408026755853,
+                "f1-score": 0.5299934080421885,
+                "support": 598.0
+              },
+              "Morocco": {
+                "precision": 0.9148300336197236,
+                "recall": 0.8168779186124083,
+                "f1-score": 0.8630837004405286,
+                "support": 2998.0
+              },
+              "Oman": {
+                "precision": 0.19289340101522842,
+                "recall": 0.5083612040133779,
+                "f1-score": 0.2796688132474701,
+                "support": 299.0
+              },
+              "Palestine": {
+                "precision": 0.6537530266343826,
+                "recall": 0.6745182012847966,
+                "f1-score": 0.6639733005445284,
+                "support": 2802.0
+              },
+              "Qatar": {
+                "precision": 0.685068349106204,
+                "recall": 0.7403409090909091,
+                "f1-score": 0.7116329874385582,
+                "support": 1760.0
+              },
+              "Saudi Arabia": {
+                "precision": 0.3019648397104447,
+                "recall": 0.4882943143812709,
+                "f1-score": 0.3731629392971246,
+                "support": 598.0
+              },
+              "Sudan": {
+                "precision": 0.41620111731843573,
+                "recall": 0.4983277591973244,
+                "f1-score": 0.4535768645357686,
+                "support": 299.0
+              },
+              "Syria": {
+                "precision": 0.9114942528735632,
+                "recall": 0.7745221152504534,
+                "f1-score": 0.8374443690125971,
+                "support": 7167.0
+              },
+              "Tunisia": {
+                "precision": 0.8918543230469836,
+                "recall": 0.8621338349905939,
+                "f1-score": 0.8767422793112872,
+                "support": 3721.0
+              },
+              "Yemen": {
+                "precision": 0.4641509433962264,
+                "recall": 0.41,
+                "f1-score": 0.4353982300884956,
+                "support": 300.0
+              },
+              "accuracy": 0.7467876518925093,
+              "macro avg": {
+                "precision": 0.627949575760972,
+                "recall": 0.6700768236432892,
+                "f1-score": 0.6397233557916959,
+                "support": 31519.0
+              },
+              "weighted avg": {
+                "precision": 0.775048194133982,
+                "recall": 0.7467876518925093,
+                "f1-score": 0.7571622408248997,
+                "support": 31519.0
+              }
+            }
+          },
+          "classes": [
+            "Algeria",
+            "Egypt",
+            "Iraq",
+            "Jordan",
+            "Lebanon",
+            "Libya",
+            "Morocco",
+            "Oman",
+            "Palestine",
+            "Qatar",
+            "Saudi Arabia",
+            "Sudan",
+            "Syria",
+            "Tunisia",
+            "Yemen"
+          ]
+        },
+        "linear_svc": {
+          "validation": {
+            "accuracy": 0.7891113296741648,
+            "precision_macro": 0.6695078339655818,
+            "recall_macro": 0.6906592123463399,
+            "f1_macro": 0.6790849624477447,
+            "precision_weighted": 0.7937027439000492,
+            "recall_weighted": 0.7891113296741648,
+            "f1_weighted": 0.7908983629257212,
+            "classification_report": {
+              "Algeria": {
+                "precision": 0.833502024291498,
+                "recall": 0.848531684698609,
+                "f1-score": 0.8409497064079653,
+                "support": 1941.0
+              },
+              "Egypt": {
+                "precision": 0.8233922025991336,
+                "recall": 0.80514825676116,
+                "f1-score": 0.814168039538715,
+                "support": 3069.0
+              },
+              "Iraq": {
+                "precision": 0.6828543111992071,
+                "recall": 0.7416576964477933,
+                "f1-score": 0.7110423116615067,
+                "support": 929.0
+              },
+              "Jordan": {
+                "precision": 0.6196358907672301,
+                "recall": 0.5779260157671315,
+                "f1-score": 0.5980545967994979,
+                "support": 1649.0
+              },
+              "Lebanon": {
+                "precision": 0.7679312388855958,
+                "recall": 0.764532310416052,
+                "f1-score": 0.7662280053230814,
+                "support": 3389.0
+              },
+              "Libya": {
+                "precision": 0.5885093167701864,
+                "recall": 0.6337792642140468,
+                "f1-score": 0.6103059581320451,
+                "support": 598.0
+              },
+              "Morocco": {
+                "precision": 0.8843653780362641,
+                "recall": 0.862241494329553,
+                "f1-score": 0.8731633170072622,
+                "support": 2998.0
+              },
+              "Oman": {
+                "precision": 0.34662576687116564,
+                "recall": 0.3779264214046823,
+                "f1-score": 0.3616,
+                "support": 299.0
+              },
+              "Palestine": {
+                "precision": 0.7030088495575221,
+                "recall": 0.708779443254818,
+                "f1-score": 0.7058823529411765,
+                "support": 2802.0
+              },
+              "Qatar": {
+                "precision": 0.7023278850916295,
+                "recall": 0.8056818181818182,
+                "f1-score": 0.7504630854723472,
+                "support": 1760.0
+              },
+              "Saudi Arabia": {
+                "precision": 0.3669172932330827,
+                "recall": 0.4080267558528428,
+                "f1-score": 0.38638163103721296,
+                "support": 598.0
+              },
+              "Sudan": {
+                "precision": 0.449438202247191,
+                "recall": 0.5351170568561873,
+                "f1-score": 0.48854961832061067,
+                "support": 299.0
+              },
+              "Syria": {
+                "precision": 0.8954591911227916,
+                "recall": 0.855727640574857,
+                "f1-score": 0.875142694063927,
+                "support": 7167.0
+              },
+              "Tunisia": {
+                "precision": 0.9106267029972752,
+                "recall": 0.8981456597688793,
+                "f1-score": 0.904343120010824,
+                "support": 3721.0
+              },
+              "Yemen": {
+                "precision": 0.4680232558139535,
+                "recall": 0.5366666666666666,
+                "f1-score": 0.5,
+                "support": 300.0
+              },
+              "accuracy": 0.7891113296741648,
+              "macro avg": {
+                "precision": 0.6695078339655818,
+                "recall": 0.6906592123463399,
+                "f1-score": 0.6790849624477447,
+                "support": 31519.0
+              },
+              "weighted avg": {
+                "precision": 0.7937027439000492,
+                "recall": 0.7891113296741648,
+                "f1-score": 0.7908983629257212,
+                "support": 31519.0
+              }
+            }
+          },
+          "test": {
+            "accuracy": 0.7877153462990577,
+            "precision_macro": 0.6711282993573114,
+            "recall_macro": 0.6892067200796465,
+            "f1_macro": 0.6791599120375653,
+            "precision_weighted": 0.7913531570285927,
+            "recall_weighted": 0.7877153462990577,
+            "f1_weighted": 0.788963787442114,
+            "classification_report": {
+              "Algeria": {
+                "precision": 0.8308308308308309,
+                "recall": 0.8552292632663575,
+                "f1-score": 0.8428535161208428,
+                "support": 1941.0
+              },
+              "Egypt": {
+                "precision": 0.803054406617881,
+                "recall": 0.8224177256435321,
+                "f1-score": 0.8126207340631036,
+                "support": 3069.0
+              },
+              "Iraq": {
+                "precision": 0.7058222676200204,
+                "recall": 0.7438105489773951,
+                "f1-score": 0.7243186582809225,
+                "support": 929.0
+              },
+              "Jordan": {
+                "precision": 0.602921646746348,
+                "recall": 0.5506367495451789,
+                "f1-score": 0.5755942947702061,
+                "support": 1649.0
+              },
+              "Lebanon": {
+                "precision": 0.7688266199649737,
+                "recall": 0.7772204190026557,
+                "f1-score": 0.7730007336757153,
+                "support": 3389.0
+              },
+              "Libya": {
+                "precision": 0.6160267111853088,
+                "recall": 0.617056856187291,
+                "f1-score": 0.6165413533834586,
+                "support": 598.0
+              },
+              "Morocco": {
+                "precision": 0.8929182346903866,
+                "recall": 0.8705803869246164,
+                "f1-score": 0.8816078365141023,
+                "support": 2998.0
+              },
+              "Oman": {
+                "precision": 0.3413897280966767,
+                "recall": 0.3779264214046823,
+                "f1-score": 0.35873015873015873,
+                "support": 299.0
+              },
+              "Palestine": {
+                "precision": 0.7071191442272224,
+                "recall": 0.684154175588865,
+                "f1-score": 0.6954471249773263,
+                "support": 2802.0
+              },
+              "Qatar": {
+                "precision": 0.7004448838358873,
+                "recall": 0.8051136363636363,
+                "f1-score": 0.7491408934707904,
+                "support": 1760.0
+              },
+              "Saudi Arabia": {
+                "precision": 0.38291605301914583,
+                "recall": 0.43478260869565216,
+                "f1-score": 0.4072043852779953,
+                "support": 598.0
+              },
+              "Sudan": {
+                "precision": 0.431266846361186,
+                "recall": 0.5351170568561873,
+                "f1-score": 0.47761194029850745,
+                "support": 299.0
+              },
+              "Syria": {
+                "precision": 0.8899352560329605,
+                "recall": 0.8438677270824613,
+                "f1-score": 0.8662894793382511,
+                "support": 7167.0
+              },
+              "Tunisia": {
+                "precision": 0.9044928705945655,
+                "recall": 0.903520558989519,
+                "f1-score": 0.9040064533476742,
+                "support": 3721.0
+              },
+              "Yemen": {
+                "precision": 0.4889589905362776,
+                "recall": 0.5166666666666667,
+                "f1-score": 0.5024311183144247,
+                "support": 300.0
+              },
+              "accuracy": 0.7877153462990577,
+              "macro avg": {
+                "precision": 0.6711282993573114,
+                "recall": 0.6892067200796465,
+                "f1-score": 0.6791599120375653,
+                "support": 31519.0
+              },
+              "weighted avg": {
+                "precision": 0.7913531570285927,
+                "recall": 0.7877153462990577,
+                "f1-score": 0.788963787442114,
+                "support": 31519.0
+              }
+            }
+          },
+          "classes": [
+            "Algeria",
+            "Egypt",
+            "Iraq",
+            "Jordan",
+            "Lebanon",
+            "Libya",
+            "Morocco",
+            "Oman",
+            "Palestine",
+            "Qatar",
+            "Saudi Arabia",
+            "Sudan",
+            "Syria",
+            "Tunisia",
+            "Yemen"
+          ]
+        }
+      }
+    }
+  }
+}

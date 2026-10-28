@@ -1,0 +1,303 @@
+{
+  "raw_rows": 247804,
+  "after_preprocessing_rows": 247803,
+  "deduplicated_rows": 238274,
+  "split_sizes": {
+    "train": 166796,
+    "validation": 35739,
+    "test": 35739
+  },
+  "overall_distribution": {
+    "region": {
+      "Egyptian": 20464,
+      "Gulf": 28347,
+      "Iraqi": 6198,
+      "Levantine": 106808,
+      "MSA": 14385,
+      "Maghrebi": 62072
+    },
+    "country": {
+      "Algeria": 12943,
+      "Egypt": 20464,
+      "Iraq": 6198,
+      "Jordan": 10994,
+      "Lebanon": 22592,
+      "Libya": 3987,
+      "Morocco": 19982,
+      "Oman": 1996,
+      "Palestine": 18684,
+      "Qatar": 11736,
+      "Saudi Arabia": 3986,
+      "Sudan": 1993,
+      "Syria": 47784,
+      "Tunisia": 24805,
+      "Unknown": 28133,
+      "Yemen": 1997
+    },
+    "city": {
+      "Aleppo": 1994,
+      "Alexandria": 1992,
+      "Algiers": 1989,
+      "Amman": 1996,
+      "Aswan": 1990,
+      "Baghdad": 1994,
+      "Basra": 1996,
+      "Beirut": 11887,
+      "Benghazi": 1994,
+      "Cairo": 11896,
+      "Damascus": 1994,
+      "Doha": 11736,
+      "Fes": 1997,
+      "Jeddah": 1992,
+      "Jerusalem": 1990,
+      "Khartoum": 1993,
+      "MSA": 11927,
+      "Mosul": 1996,
+      "Muscat": 1996,
+      "Rabat": 11920,
+      "Riyadh": 1994,
+      "Salt": 1997,
+      "Sanaa": 1997,
+      "Sfax": 1993,
+      "Tripoli": 1993,
+      "Tunis": 11906,
+      "Unknown": 127125
+    },
+    "source": {
+      "IADD": 127125,
+      "MADAR": 111149
+    }
+  },
+  "split_distributions": {
+    "train": {
+      "region": {
+        "Egyptian": 14326,
+        "Gulf": 19843,
+        "Iraqi": 4340,
+        "Levantine": 74768,
+        "MSA": 10069,
+        "Maghrebi": 43450
+      },
+      "country": {
+        "Algeria": 9061,
+        "Egypt": 14326,
+        "Iraq": 4340,
+        "Jordan": 7696,
+        "Lebanon": 15814,
+        "Libya": 2791,
+        "Morocco": 13986,
+        "Oman": 1398,
+        "Palestine": 13080,
+        "Qatar": 8216,
+        "Saudi Arabia": 2790,
+        "Sudan": 1395,
+        "Syria": 33450,
+        "Tunisia": 17363,
+        "Unknown": 19693,
+        "Yemen": 1397
+      },
+      "city": {
+        "Aleppo": 1396,
+        "Alexandria": 1394,
+        "Algiers": 1393,
+        "Amman": 1398,
+        "Aswan": 1394,
+        "Baghdad": 1396,
+        "Basra": 1398,
+        "Beirut": 8321,
+        "Benghazi": 1396,
+        "Cairo": 8328,
+        "Damascus": 1396,
+        "Doha": 8216,
+        "Fes": 1397,
+        "Jeddah": 1394,
+        "Jerusalem": 1394,
+        "Khartoum": 1395,
+        "MSA": 8349,
+        "Mosul": 1398,
+        "Muscat": 1398,
+        "Rabat": 8344,
+        "Riyadh": 1396,
+        "Salt": 1397,
+        "Sanaa": 1397,
+        "Sfax": 1395,
+        "Tripoli": 1395,
+        "Tunis": 8334,
+        "Unknown": 88987
+      },
+      "source": {
+        "IADD": 88987,
+        "MADAR": 77809
+      }
+    },
+    "validation": {
+      "region": {
+        "Egyptian": 3069,
+        "Gulf": 4252,
+        "Iraqi": 929,
+        "Levantine": 16020,
+        "MSA": 2158,
+        "Maghrebi": 9311
+      },
+      "country": {
+        "Algeria": 1941,
+        "Egypt": 3069,
+        "Iraq": 929,
+        "Jordan": 1649,
+        "Lebanon": 3389,
+        "Libya": 598,
+        "Morocco": 2998,
+        "Oman": 299,
+        "Palestine": 2802,
+        "Qatar": 1760,
+        "Saudi Arabia": 598,
+        "Sudan": 299,
+        "Syria": 7167,
+        "Tunisia": 3721,
+        "Unknown": 4220,
+        "Yemen": 300
+      },
+      "city": {
+        "Aleppo": 299,
+        "Alexandria": 299,
+        "Algiers": 298,
+        "Amman": 299,
+        "Aswan": 298,
+        "Baghdad": 299,
+        "Basra": 299,
+        "Beirut": 1783,
+        "Benghazi": 299,
+        "Cairo": 1784,
+        "Damascus": 299,
+        "Doha": 1760,
+        "Fes": 300,
+        "Jeddah": 299,
+        "Jerusalem": 298,
+        "Khartoum": 299,
+        "MSA": 1789,
+        "Mosul": 299,
+        "Muscat": 299,
+        "Rabat": 1788,
+        "Riyadh": 299,
+        "Salt": 300,
+        "Sanaa": 300,
+        "Sfax": 299,
+        "Tripoli": 299,
+        "Tunis": 1786,
+        "Unknown": 19069
+      },
+      "source": {
+        "IADD": 19069,
+        "MADAR": 16670
+      }
+    },
+    "test": {
+      "region": {
+        "Egyptian": 3069,
+        "Gulf": 4252,
+        "Iraqi": 929,
+        "Levantine": 16020,
+        "MSA": 2158,
+        "Maghrebi": 9311
+      },
+      "country": {
+        "Algeria": 1941,
+        "Egypt": 3069,
+        "Iraq": 929,
+        "Jordan": 1649,
+        "Lebanon": 3389,
+        "Libya": 598,
+        "Morocco": 2998,
+        "Oman": 299,
+        "Palestine": 2802,
+        "Qatar": 1760,
+        "Saudi Arabia": 598,
+        "Sudan": 299,
+        "Syria": 7167,
+        "Tunisia": 3721,
+        "Unknown": 4220,
+        "Yemen": 300
+      },
+      "city": {
+        "Aleppo": 299,
+        "Alexandria": 299,
+        "Algiers": 298,
+        "Amman": 299,
+        "Aswan": 298,
+        "Baghdad": 299,
+        "Basra": 299,
+        "Beirut": 1783,
+        "Benghazi": 299,
+        "Cairo": 1784,
+        "Damascus": 299,
+        "Doha": 1760,
+        "Fes": 300,
+        "Jeddah": 299,
+        "Jerusalem": 298,
+        "Khartoum": 299,
+        "MSA": 1789,
+        "Mosul": 299,
+        "Muscat": 299,
+        "Rabat": 1788,
+        "Riyadh": 299,
+        "Salt": 300,
+        "Sanaa": 300,
+        "Sfax": 299,
+        "Tripoli": 299,
+        "Tunis": 1786,
+        "Unknown": 19069
+      },
+      "source": {
+        "IADD": 19069,
+        "MADAR": 16670
+      }
+    }
+  },
+  "external_test": {
+    "qadi_labeled_rows": 3503,
+    "distribution": {
+      "region": {
+        "Egyptian": 200,
+        "Gulf": 1513,
+        "Iraqi": 178,
+        "Levantine": 741,
+        "MSA": 200,
+        "Maghrebi": 671
+      },
+      "country": {
+        "Algeria": 170,
+        "Bahrain": 184,
+        "Egypt": 200,
+        "Iraq": 178,
+        "Jordan": 180,
+        "Kuwait": 190,
+        "Lebanon": 194,
+        "Libya": 169,
+        "Morocco": 178,
+        "Oman": 169,
+        "Palestine": 173,
+        "Qatar": 198,
+        "Saudi Arabia": 199,
+        "Sudan": 188,
+        "Syria": 194,
+        "Tunisia": 154,
+        "United Arab Emirates": 192,
+        "Unknown": 200,
+        "Yemen": 193
+      },
+      "city": {
+        "Unknown": 3503
+      },
+      "source": {
+        "QADI": 3503
+      }
+    }
+  },
+  "preprocessing": [
+    "URLs removed",
+    "Arabic diacritics and tatweel removed",
+    "Alef variants normalized",
+    "Ya and ta marbuta normalized",
+    "whitespace/control characters normalized"
+  ]
+}
