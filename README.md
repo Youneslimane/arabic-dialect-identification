@@ -99,6 +99,24 @@ python scripts\predict.py --text "شو أخبارك اليوم؟"
 python -m streamlit run app.py
 ```
 
+## دفاتر Jupyter التعليمية
+
+يحتوي مجلد `notebooks/` على شرح عربي تفاعلي لمراحل المشروع:
+
+- `01_data_preparation_ar.ipynb`: تجهيز البيانات والتطبيع والتوزيع.
+- `02_baseline_models_ar.ipynb`: Character TF-IDF ومقارنة النماذج الأساسية.
+- `03_hierarchical_classification_ar.ipynb`: تدريب وقراءة نماذج الدولة حسب المنطقة.
+- `04_prediction_and_demo_ar.ipynb`: تحميل النماذج وتجربة التنبؤ على نصوص جديدة.
+
+لتشغيلها:
+
+```powershell
+jupyter notebook
+```
+
+ثم افتح الدفاتر بالترتيب. خلية التدريب في الدفتر الثاني اختيارية، لأن النماذج
+والنتائج محفوظة مسبقًا في `models/` و`results/`.
+
 ## أمثلة
 
 ```text

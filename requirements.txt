@@ -1,4 +1,6 @@
 joblib
+jupyter
+nbclient
 matplotlib
 scikit-learn
 streamlit
