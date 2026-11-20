@@ -1,5 +1,9 @@
 # Arabic Dialect Identification
 
+**الطالبان:** Younes Limane — موسى الياس قدور
+
+**مستودع GitHub:** https://github.com/Youneslimane/arabic-dialect-identification
+
 نظام هرمي للتعرف على اللهجات العربية المكتوبة، يبدأ بتحديد المنطقة ثم يحدد
 الدولة داخل المنطقة. تركز النسخة الحالية على **Region** و **Country**، بينما
 تم تأجيل تصنيف المدينة إلى مرحلة لاحقة.

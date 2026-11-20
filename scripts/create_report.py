@@ -22,7 +22,7 @@ from reportlab.platypus import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "Report_YOUNES_LIMANE.pdf"
+OUTPUT = ROOT / "Report_YOUNES_LIMANE_MUSA_QADOUR.pdf"
 FONT = Path(r"C:\Windows\Fonts\tahoma.ttf")
 BOLD_FONT = Path(r"C:\Windows\Fonts\tahomabd.ttf")
 
@@ -86,10 +86,23 @@ styles.add(
         alignment=TA_LEFT,
     )
 )
+styles.add(
+    ParagraphStyle(
+        name="PlainEnglish",
+        parent=styles["ArabicBody"],
+        fontName="Tahoma",
+        alignment=TA_LEFT,
+        textColor=colors.HexColor("#183b56"),
+    )
+)
 
 
 def p(text: str, style: str = "ArabicBody") -> Paragraph:
     return Paragraph(rtl(text), styles[style])
+
+
+def plain(text: str) -> Paragraph:
+    return Paragraph(text, styles["PlainEnglish"])
 
 
 def heading(text: str) -> Paragraph:
@@ -134,7 +147,7 @@ doc = SimpleDocTemplate(
     topMargin=1.45 * cm,
     bottomMargin=1.45 * cm,
     title="Arabic Dialect Identification",
-    author="Younes Limane",
+    author="Younes Limane and Moussa Elias Qadouh",
 )
 story: list = []
 
@@ -148,7 +161,9 @@ story.extend(
         Spacer(1, 1.2 * cm),
         p("باستخدام تقنيات التعلم الآلي", "ArabicTitle"),
         Spacer(1, 2.0 * cm),
-        p("إعداد الطالب: Younes Limane", "ArabicBody"),
+        p("إعداد الطالبين: Younes Limane  و  موسى الياس قدور", "ArabicBody"),
+        plain("Authors: Younes Limane and Moussa Elias Qadouh"),
+        plain("GitHub: https://github.com/Youneslimane/arabic-dialect-identification"),
         p("السنة الدراسية: 2026", "ArabicBody"),
         Spacer(1, 4.0 * cm),
         p("تقرير مشروع NLP", "ArabicBody"),
@@ -192,9 +207,22 @@ story.extend(
             "ثم تحديد الدولة. تتمثل مساهمات المشروع في دمج مصادر مختلفة، وبناء نماذج "
             "أساسية قابلة للتشغيل، وتصميم تصنيف هرمي، وتوفير واجهة استخدام."
         ),
-        heading("محتويات التقرير"),
-        p("يتناول التقرير حالة الفن، ومصادر البيانات ومعالجتها، وتصميم النظام وتنفيذه، "
-          "ثم التجارب والنتائج والخاتمة والمراجع."),
+        heading("جدول المحتويات وقائمة الأشكال والجداول"),
+        p(
+            "جدول المحتويات: الصفحة 1 الغلاف؛ الصفحة 2 الملخص والمقدمة؛ الصفحة 3 حالة الفن والبيانات؛ "
+            "الصفحة 4 المعالجة والتصميم؛ الصفحة 5 التنفيذ والأدوات؛ الصفحة 6 التجارب والنتائج؛ "
+            "الصفحة 7 الخاتمة والمراجع والملحق."
+        ),
+        p(
+            "قائمة الأشكال والجداول: الجدول 1 مصادر البيانات؛ الجدول 2 أحجام البيانات والتقسيمات؛ "
+            "الجدول 3 مقارنات النماذج؛ الجدول 4 نتائج التصنيف الهرمي؛ الشكل 1 مصفوفة الالتباس الإقليمية."
+        ),
+        heading("الأهداف والمساهمة وتنظيم التقرير"),
+        p(
+            "الأهداف هي دمج البيانات، وتنظيفها وتوحيد تسمياتها، وتصنيف المنطقة ثم الدولة، "
+            "وبناء واجهة تجريبية. وتشمل المساهمات خط معالجة قابل للتكرار، وتجربة معيارية "
+            "هرمية، ونموذجًا قابلًا للتوسعة نحو مستوى المدينة."
+        ),
         PageBreak(),
     ]
 )
@@ -238,7 +266,12 @@ story.extend(
         ),
         Spacer(1, 0.3 * cm),
         p("تم تقسيم البيانات إلى Train = 166,796، وValidation = 35,739، وTest = 35,739. "
-          "لم تُستخدم سجلات Unknown في تدريب نموذج الدولة."),
+          "لغة النصوص العربية. لم تُستخدم سجلات Unknown في تدريب نموذج الدولة."),
+        p(
+            "يتطلب IADD/MADAR احترام تراخيصهما وشروطهما. أما NADI المتاح فهو TEST فقط، "
+            "وبعض ملفات QADI التدريبية تعتمد على Twitter IDs؛ لذلك لم يدخلا في التدريب "
+            "دون استرجاع النصوص بالطرق المصرح بها."
+        ),
         PageBreak(),
     ]
 )
@@ -258,6 +291,11 @@ story.extend(
             "Character-level TF-IDF الذي يحافظ على المؤشرات الكتابية داخل الكلمات "
             "ويتناسب مع الاختلافات الإملائية واللهجية. كما لم تُختلق تسميات للمدن عند "
             "عدم توفرها في المصدر."
+        ),
+        p(
+            "لم تُطبق في النسخة الحالية إزالة مخصصة لـHTML أو Emoji، ولا أدوات spaCy أو NLTK "
+            "ولا Word Segmentation كاملًا. أزيلت الروابط ومحارف التحكم والتشكيل والتطويل "
+            "والفراغات الزائدة، بينما تم التمثيل مباشرةً بمقاطع الأحرف."
         ),
         heading("تصميم النظام"),
         p("التدفق العام للنظام هو:"),
@@ -292,8 +330,9 @@ story.extend(
     [
         heading("الفصل الرابع: التنفيذ"),
         p("تم تنفيذ المشروع باستخدام Python 3.13 والمكتبات التالية: scikit-learn، "
-          "joblib، matplotlib، وStreamlit. أُديرت الشفرة باستخدام Git، وحُفظت النماذج "
-          "والنتائج في مجلدات مستقلة."),
+          "joblib، matplotlib، Streamlit وJupyter. لم يُستخدم PyTorch/TensorFlow في النسخة "
+          "النهائية، ولم تُدرب نماذج Transformer. أُديرت الشفرة باستخدام Git/GitHub، "
+          "وحُفظت النماذج والنتائج في مجلدات مستقلة."),
         table(
             [
                 ["الملف", "الوظيفة"],
@@ -302,6 +341,7 @@ story.extend(
                 ["train_hierarchical.py", "تدريب نماذج الدول حسب المنطقة"],
                 ["predict.py", "تنفيذ التنبؤ الهرمي لنص واحد"],
                 ["app.py", "واجهة Streamlit التفاعلية"],
+                ["notebooks/", "شرح عربي تفاعلي لمراحل المشروع"],
             ],
             [6.0 * cm, 9.5 * cm],
         ),
@@ -394,8 +434,11 @@ story.extend(
         p("الناتج المتوقع تقريبًا: المنطقة الشامية، والدولة لبنان. النتائج تقديرية وقد "
           "تختلف للنصوص القصيرة أو المتشابهة."),
         heading("ملاحظة التسليم"),
-        p("يُرفق هذا التقرير باسم Report_YOUNES_LIMANE.pdf مع ملف المصدر المضغوط "
-          "Source_YOUNES_LIMANE.zip عبر نموذج الأستاذ قبل 1 ديسمبر 2026."),
+        p("إعداد: Younes Limane وموسى الياس قدور."),
+        p("مستودع GitHub: https://github.com/Youneslimane/arabic-dialect-identification"),
+        plain("GitHub: https://github.com/Youneslimane/arabic-dialect-identification"),
+        p("يُرفق هذا التقرير باسم Report_YOUNES_LIMANE_MUSA_QADOUR.pdf مع ملف المصدر المضغوط "
+          "Source_YOUNES_LIMANE_MUSA_QADOUR.zip عبر نموذج الأستاذ قبل 1 ديسمبر 2026."),
     ]
 )
 
